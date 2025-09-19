@@ -1,0 +1,44 @@
+-- 🧑‍🎓 Question 1: Create the student table
+CREATE TABLE student (
+    id INT PRIMARY KEY,
+    fullName VARCHAR(100),
+    age INT
+);
+
+-- ➕ Question 2: Insert at least 3 records into the student table
+INSERT INTO student (id, fullName, age) VALUES
+(1, 'Amina Otieno', 19),
+(2, 'Brian Mwangi', 18),
+(3, 'Cynthia Wanjiru', 20);
+
+-- 🔄 Question 3: Update the age of the student with ID 2 to 20
+UPDATE student
+SET age = 20
+WHERE id = 2;
+
+-- Input other student details and add into the record
+INSERT INTO student (id, fullName, age) VALUES
+(4, "John Maasai", 25),
+(5, "Alex Mwakideu", 27),
+(6, "Mwariama Mwashumbe", 29),
+(7, "Sharon Njeri", 37),
+
+-- Creating table 2 - participation table.
+CREATE TABLE participation (
+    id INT PRIMARY KEY
+    fullName VARCHAR(100)
+    sport VARCHAR(100)
+    fee INT
+);
+
+-- Insert records into the participation table
+INSERT INTO student (id, fullname, sport, fee) VALUES
+(1, "Amina Otieno", legball, 500),
+(2, "Brian Mwangi", football, 800),
+(3, "Cynthia Wanjiru", volleyball, 1200),
+(4, "John Maasai", handball, 600),
+(5, "Alex Mwakideu" badminton 2000),
+(6, "Mwariama Mwashumbe", tennis, 3500),
+(7, "Sharon Njeri", rugby, 1800),
+
+
